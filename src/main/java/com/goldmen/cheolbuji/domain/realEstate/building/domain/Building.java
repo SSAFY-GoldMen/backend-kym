@@ -1,8 +1,8 @@
 package com.goldmen.cheolbuji.domain.realEstate.building.domain;
 
 import com.goldmen.cheolbuji.domain.map.dong.domain.Dong;
-import com.goldmen.cheolbuji.global.entity.Address;
-import com.goldmen.cheolbuji.global.entity.Position;
+import com.goldmen.cheolbuji.domain.global.Address;
+import com.goldmen.cheolbuji.domain.global.Position;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;

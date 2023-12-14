@@ -1,4 +1,4 @@
-package com.goldmen.cheolbuji.global.entity;
+package com.goldmen.cheolbuji.domain.global;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

@@ -2,8 +2,7 @@ package com.goldmen.cheolbuji.domain.metro.station.domain;
 
 import com.goldmen.cheolbuji.domain.map.dong.domain.Dong;
 import com.goldmen.cheolbuji.domain.metro.adjacent.repository.Adjacent;
-import com.goldmen.cheolbuji.global.entity.Address;
-import com.goldmen.cheolbuji.global.entity.Position;
+import com.goldmen.cheolbuji.domain.global.Position;
 import jakarta.persistence.*;
 import lombok.*;
 
