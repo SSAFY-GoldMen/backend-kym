@@ -1,11 +1,15 @@
 package com.goldmen.cheolbuji.domain.map.dong.domain;
 
 import com.goldmen.cheolbuji.domain.map.gu.domain.Gu;
+import com.goldmen.cheolbuji.domain.metro.station.domain.Station;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
@@ -25,6 +29,9 @@ public class Dong {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "GU_ID")
     private Gu gu;
+
+    @OneToMany(mappedBy = "dong")
+    private final List<Station> stationList = new ArrayList<>();
 
     @Builder
     public Dong(String name, String code,Gu gu){

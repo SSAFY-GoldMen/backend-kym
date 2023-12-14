@@ -27,8 +27,8 @@ public class Gu {
     @Column(name = "GU_CODE", unique = true, nullable = false, length = 10)
     private String code;
 
-    @OneToMany(mappedBy = "GU")
-    private List<Dong> dongList = new ArrayList<>();
+    @OneToMany(mappedBy = "gu")
+    private final List<Dong> dongList = new ArrayList<>();
 
     @Builder
     public Gu(String name, String code){
