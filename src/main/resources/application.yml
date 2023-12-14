@@ -2,3 +2,4 @@ spring:
   config:
     import:
       - security/application-database.yml
+      - security/application-key.yml
