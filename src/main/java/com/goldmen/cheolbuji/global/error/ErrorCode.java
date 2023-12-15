@@ -16,6 +16,9 @@ public enum ErrorCode {
     // Gu
     API_ERROR_GU_NOT_FOUND(400,"G001","존재하지 않음"),
 
+    // Line
+    API_ERROR_LINE_NOT_FOUND(400,"L001","존재하지 않음")
+
     ;
     private final int status;
     private final String code;
