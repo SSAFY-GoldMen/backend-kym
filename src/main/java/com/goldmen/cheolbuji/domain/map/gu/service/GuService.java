@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 @Service
 public class GuService {
-    private GuRepository guRepository;
+    private final GuRepository guRepository;
 
     @Transactional
     public Gu save(Gu gu){
