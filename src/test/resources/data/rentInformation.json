@@ -1,0 +1,39 @@
+{
+  "DESCRIPTION": {
+    "LAND_GBN_NM": "지번구분명",
+    "BOBN": "본번",
+    "BEFORE_MT_RENT_CHRGE": "종전 임대료",
+    "BLDG_NM": "건물명",
+    "RENT_GBN": "전월세 구분",
+    "BJDONG_CD": "법정동코드",
+    "LAND_GBN": "지번구분",
+    "BUBN": "부번",
+    "RENT_AREA": "임대면적(㎡)",
+    "ACC_YEAR": "접수연도",
+    "BUILD_YEAR": "건축년도",
+    "BJDONG_NM": "법정동명",
+    "NEW_RON_SECD": "신규갱신여부",
+    "RENT_FEE": "임대료(만원)",
+    "BEFORE_GRNTY_AMOUNT": "종전 보증금",
+    "RENT_GTN": "보증금(만원)",
+    "HOUSE_GBN_NM": "건물용도",
+    "CNTRCT_PRD": "계약기간",
+    "SGG_NM": "자치구명",
+    "SGG_CD": "자치구코드",
+    "CNTRCT_UPDT_RQEST_AT": "계약갱신권사용여부",
+    "CNTRCT_DE": "계약일",
+    "FLR_NO": "층"
+  },
+  "DATA": [
+    {"house_gbn_nm":"연립다세대","rent_area":50.81,"sgg_cd":"11560","build_year":"2023","rent_gtn":"2500","bjdong_cd":"13000","rent_gbn":"월세","cntrct_updt_rqest_at":null,"flr_no":5,"sgg_nm":"영등포구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"신규","bjdong_nm":"양평동6가","cntrct_prd":"23.12~26.03","bubn":"0012","bldg_nm":"선유도윤영빌B동","acc_year":"2023","bobn":"0075","before_grnty_amount":"0","land_gbn_nm":"대지","rent_fee":"45","before_mt_rent_chrge":"0"},
+    {"house_gbn_nm":"아파트","rent_area":39.8,"sgg_cd":"11500","build_year":"2007","rent_gtn":"5478","bjdong_cd":"10600","rent_gbn":"월세","cntrct_updt_rqest_at":null,"flr_no":2,"sgg_nm":"강서구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":null,"bjdong_nm":"내발산동","cntrct_prd":null,"bubn":"0000","bldg_nm":"마곡수명산파크1단지","acc_year":"2023","bobn":"0742","before_grnty_amount":null,"land_gbn_nm":"대지","rent_fee":"4","before_mt_rent_chrge":null},
+    {"house_gbn_nm":"연립다세대","rent_area":44.74,"sgg_cd":"11560","build_year":"2023","rent_gtn":"2175","bjdong_cd":"13000","rent_gbn":"월세","cntrct_updt_rqest_at":null,"flr_no":3,"sgg_nm":"영등포구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"신규","bjdong_nm":"양평동6가","cntrct_prd":"23.12~26.03","bubn":"0012","bldg_nm":"선유도윤영빌B동","acc_year":"2023","bobn":"0075","before_grnty_amount":"0","land_gbn_nm":"대지","rent_fee":"40","before_mt_rent_chrge":"0"},
+    {"house_gbn_nm":"연립다세대","rent_area":22.97,"sgg_cd":"11410","build_year":"2001","rent_gtn":"10500","bjdong_cd":"11600","rent_gbn":"월세","cntrct_updt_rqest_at":null,"flr_no":2,"sgg_nm":"서대문구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"갱신","bjdong_nm":"창천동","cntrct_prd":"24.01~26.01","bubn":"0124","bldg_nm":"블루힐","acc_year":"2023","bobn":"0100","before_grnty_amount":"10500","land_gbn_nm":"대지","rent_fee":"2","before_mt_rent_chrge":"0"},
+    {"house_gbn_nm":"아파트","rent_area":74.82,"sgg_cd":"11710","build_year":"2017","rent_gtn":"36435","bjdong_cd":"10900","rent_gbn":"전세","cntrct_updt_rqest_at":null,"flr_no":2,"sgg_nm":"송파구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"신규","bjdong_nm":"장지동","cntrct_prd":null,"bubn":"0000","bldg_nm":"위례포레샤인23단지","acc_year":"2023","bobn":"0905","before_grnty_amount":"0","land_gbn_nm":"대지","rent_fee":"0","before_mt_rent_chrge":null},
+    {"house_gbn_nm":"연립다세대","rent_area":29.88,"sgg_cd":"11470","build_year":"2017","rent_gtn":"20000","bjdong_cd":"10200","rent_gbn":"전세","cntrct_updt_rqest_at":null,"flr_no":4,"sgg_nm":"양천구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"신규","bjdong_nm":"목동","cntrct_prd":"24.01~26.01","bubn":"0031","bldg_nm":"목동숲아파트","acc_year":"2023","bobn":"0537","before_grnty_amount":"0","land_gbn_nm":"대지","rent_fee":"0","before_mt_rent_chrge":null},
+    {"house_gbn_nm":"아파트","rent_area":41.3,"sgg_cd":"11350","build_year":"1988","rent_gtn":"1000","bjdong_cd":"10500","rent_gbn":"월세","cntrct_updt_rqest_at":null,"flr_no":7,"sgg_nm":"노원구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"갱신","bjdong_nm":"상계동","cntrct_prd":"24.01~25.01","bubn":"0005","bldg_nm":"상계주공4(고층)","acc_year":"2023","bobn":"0749","before_grnty_amount":"1000","land_gbn_nm":"대지","rent_fee":"68","before_mt_rent_chrge":"65"},
+    {"house_gbn_nm":"아파트","rent_area":110.39,"sgg_cd":"11680","build_year":"1989","rent_gtn":"162000","bjdong_cd":"10600","rent_gbn":"전세","cntrct_updt_rqest_at":null,"flr_no":16,"sgg_nm":"강남구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"갱신","bjdong_nm":"대치동","cntrct_prd":"24.02~26.02","bubn":"0000","bldg_nm":"래미안대치하이스턴","acc_year":"2023","bobn":"0985","before_grnty_amount":"142000","land_gbn_nm":"대지","rent_fee":"0","before_mt_rent_chrge":null},
+    {"house_gbn_nm":"아파트","rent_area":39.84,"sgg_cd":"11260","build_year":"1996","rent_gtn":"13000","bjdong_cd":"10400","rent_gbn":"월세","cntrct_updt_rqest_at":null,"flr_no":2,"sgg_nm":"중랑구","land_gbn":"1","cntrct_de":"20231213","new_ron_secd":"갱신","bjdong_nm":"묵동","cntrct_prd":"24.02~26.02","bubn":"0000","bldg_nm":"신내","acc_year":"2023","bobn":"0013","before_grnty_amount":"10000","land_gbn_nm":"대지","rent_fee":"30","before_mt_rent_chrge":"22"},
+    {"house_gbn_nm":"아파트","rent_area":43.74,"sgg_cd":"11380","build_year":"2019","rent_gtn":"12874","bjdong_cd":"10200","rent_gbn":"월세","cntrct_updt_rqest_at":null,"flr_no":18,"sgg_nm":"은평구","land_gbn":"1","cntrct_de":"20231212","new_ron_secd":"신규","bjdong_nm":"녹번동","cntrct_prd":null,"bubn":"0000","bldg_nm":"래미안베라힐즈","acc_year":"2023","bobn":"0283","before_grnty_amount":"0","land_gbn_nm":"대지","rent_fee":"35","before_mt_rent_chrge":"0"}
+  ]
+}
