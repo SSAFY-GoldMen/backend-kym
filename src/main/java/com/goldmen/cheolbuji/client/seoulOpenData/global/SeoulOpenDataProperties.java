@@ -1,4 +1,4 @@
-package com.goldmen.cheolbuji.client.seoulOpenData.property;
+package com.goldmen.cheolbuji.client.seoulOpenData.global;
 
 import org.springframework.context.annotation.Configuration;
 

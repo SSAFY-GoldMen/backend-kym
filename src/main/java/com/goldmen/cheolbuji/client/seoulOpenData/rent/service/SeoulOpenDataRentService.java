@@ -2,8 +2,7 @@ package com.goldmen.cheolbuji.client.seoulOpenData.rent.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.goldmen.cheolbuji.client.global.service.JsonFileReader;
-import com.goldmen.cheolbuji.client.seoulOpenData.global.vo.SeoulOpenDataResponse;
-import com.goldmen.cheolbuji.client.seoulOpenData.property.SeoulOpenDataProperties;
+import com.goldmen.cheolbuji.client.seoulOpenData.global.SeoulOpenDataResponse;
 import com.goldmen.cheolbuji.client.seoulOpenData.rent.vo.SeoulOpenDataRent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,7 +11,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.goldmen.cheolbuji.client.seoulOpenData.property.SeoulOpenDataProperties.PATH_INFORM_RENT;
+import static com.goldmen.cheolbuji.client.seoulOpenData.global.SeoulOpenDataProperties.PATH_INFORM_RENT;
 
 @RequiredArgsConstructor
 @Service

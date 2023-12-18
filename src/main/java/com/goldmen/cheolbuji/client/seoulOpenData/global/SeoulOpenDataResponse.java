@@ -1,4 +1,4 @@
-package com.goldmen.cheolbuji.client.seoulOpenData.global.vo;
+package com.goldmen.cheolbuji.client.seoulOpenData.global;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

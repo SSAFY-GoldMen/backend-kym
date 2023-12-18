@@ -1,6 +1,6 @@
 package com.goldmen.cheolbuji.client.seoulOpenData.rent.service;
 
-import com.goldmen.cheolbuji.client.seoulOpenData.global.vo.SeoulOpenDataResponse;
+import com.goldmen.cheolbuji.client.seoulOpenData.global.SeoulOpenDataResponse;
 import com.goldmen.cheolbuji.client.seoulOpenData.rent.vo.SeoulOpenDataRent;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
