@@ -1,5 +1,6 @@
 package com.goldmen.cheolbuji.domain.metro.station.fixture;
 
+import com.goldmen.cheolbuji.domain.global.Coordinate;
 import com.goldmen.cheolbuji.domain.map.dong.domain.Dong;
 import com.goldmen.cheolbuji.domain.map.dong.fixture.DongFixture;
 import com.goldmen.cheolbuji.domain.metro.station.domain.Station;
@@ -22,15 +23,12 @@ public enum StationFixture {
         return Station.builder()
                 .dong(DongFixture.GANGNAMDONG.create())
                 .name(name)
-                .lat(lat)
-                .lng(lng).build();
+                .coordinate(new Coordinate(lat,lng)).build();
     }
 
     public Station create(Dong dong){
         return Station.builder()
                 .dong(dong)
-                .name(name)
-                .lat(lat)
-                .lng(lng).build();
+                .name(name).coordinate(new Coordinate(lat,lng)).build();
     }
 }
