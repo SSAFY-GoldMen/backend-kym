@@ -3,11 +3,12 @@ package com.goldmen.cheolbuji.client.seoulOpenData.rent.vo;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public record SeoulOpenDataRent(String accYear, String guCode, String guName, String dongCode, String dongName,
+public record SeoulOpenDataRent(String houseType,String accYear, String guCode, String guName, String dongCode, String dongName,
                                 String bonNum, String buNum, int floor, String cntrctDe, String rentType, double area,
                                 int price, int rent, int constructorYear, String cntrctPrd) {
     @JsonCreator
     public SeoulOpenDataRent(
+            @JsonProperty("house_gbn_nm") String houseType,
             @JsonProperty("acc_year") String accYear,
             @JsonProperty("sgg_cd") String guCode,
             @JsonProperty("sgg_nm") String guName,
@@ -23,6 +24,7 @@ public record SeoulOpenDataRent(String accYear, String guCode, String guName, St
             @JsonProperty("rent_fee") int rent,
             @JsonProperty("build_year") int constructorYear,
             @JsonProperty("cntrct_prd") String cntrctPrd){
+        this.houseType = houseType;
         this.accYear = accYear;
         this.guCode = guCode;
         this.guName = guName;
