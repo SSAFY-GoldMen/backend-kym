@@ -2,19 +2,21 @@ package com.goldmen.cheolbuji.client.global.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-public abstract class JsonFileReader<T>{
-    @Autowired
-    private ObjectMapper objectMapper;
+@RequiredArgsConstructor
+@Component
+public class JsonFileReader implements FileReader{
 
-    protected T loadFile(String path, TypeReference<T> typeValue) throws IOException {
+    private final ObjectMapper objectMapper;
+
+    @Override
+    public  <T> T readFile(String path, TypeReference<T> typeValue) throws IOException {
         ClassPathResource resource = new ClassPathResource(path);
         return objectMapper.readValue(resource.getInputStream(), typeValue);
     }
-
-    protected abstract T loadFile() throws IOException;
 }

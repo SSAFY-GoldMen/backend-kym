@@ -1,7 +1,7 @@
 package com.goldmen.cheolbuji.client.seoulOpenData.rent.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.goldmen.cheolbuji.client.global.service.JsonFileReader;
+import com.goldmen.cheolbuji.client.global.service.FileReader;
 import com.goldmen.cheolbuji.client.seoulOpenData.global.SeoulOpenDataResponse;
 import com.goldmen.cheolbuji.client.seoulOpenData.rent.vo.SeoulOpenDataRent;
 import lombok.RequiredArgsConstructor;
@@ -15,11 +15,11 @@ import static com.goldmen.cheolbuji.client.seoulOpenData.global.SeoulOpenDataPro
 
 @RequiredArgsConstructor
 @Service
-public class SeoulOpenDataRentService extends JsonFileReader<SeoulOpenDataResponse<SeoulOpenDataRent>> {
+public class SeoulOpenDataRentService{
+    private final FileReader jsonFileService;
 
-    @Override
-    protected SeoulOpenDataResponse<SeoulOpenDataRent> loadFile() throws IOException {
-        return loadFile(PATH_INFORM_RENT, new TypeReference<>() {});
+    public SeoulOpenDataResponse<SeoulOpenDataRent> loadFile() throws IOException {
+        return jsonFileService.readFile(PATH_INFORM_RENT, new TypeReference<>() {});
     }
 
     public List<SeoulOpenDataRent> filter(List<SeoulOpenDataRent> rentList) {
