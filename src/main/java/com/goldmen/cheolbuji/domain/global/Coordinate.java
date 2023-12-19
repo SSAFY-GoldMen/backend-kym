@@ -7,14 +7,14 @@ import lombok.*;
 @Embeddable
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public class Position {
+public class Coordinate {
     @Column(nullable = false)
     private double lat;
 
     @Column(nullable = false)
     private double lng;
 
-    public Position(double lat, double lng){
+    public Coordinate(double lat, double lng){
         this.lat = lat;
         this.lng = lng;
     }

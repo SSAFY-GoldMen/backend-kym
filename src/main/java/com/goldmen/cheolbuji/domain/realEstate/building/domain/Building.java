@@ -2,7 +2,7 @@ package com.goldmen.cheolbuji.domain.realEstate.building.domain;
 
 import com.goldmen.cheolbuji.domain.map.dong.domain.Dong;
 import com.goldmen.cheolbuji.domain.global.Address;
-import com.goldmen.cheolbuji.domain.global.Position;
+import com.goldmen.cheolbuji.domain.global.Coordinate;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -53,9 +53,9 @@ public class Building {
                     String bonNum,
                     String buNum,
                     int constructionYear,
-                    Position position,
+                    Coordinate coordinate,
                     Dong dong) {
-        this(name,type, new Address(bonNum,buNum,position),constructionYear,dong);
+        this(name,type, new Address(bonNum,buNum, coordinate),constructionYear,dong);
     }
 
 }

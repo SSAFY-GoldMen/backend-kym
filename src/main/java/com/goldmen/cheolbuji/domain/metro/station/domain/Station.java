@@ -2,7 +2,7 @@ package com.goldmen.cheolbuji.domain.metro.station.domain;
 
 import com.goldmen.cheolbuji.domain.map.dong.domain.Dong;
 import com.goldmen.cheolbuji.domain.metro.adjacent.repository.Adjacent;
-import com.goldmen.cheolbuji.domain.global.Position;
+import com.goldmen.cheolbuji.domain.global.Coordinate;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -22,7 +22,7 @@ public class Station {
     private String name;
 
     @Embedded
-    private Position position;
+    private Coordinate coordinate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "DONG_ID")
@@ -35,9 +35,9 @@ public class Station {
     private final List<Adjacent> adjacentBList = new ArrayList<>();
 
     @Builder
-    public Station(String name,Dong dong, Position position){
+    public Station(String name,Dong dong, Coordinate coordinate){
         this.name = name;
-        this.position = position;
+        this.coordinate = coordinate;
         addRelated(dong);
     }
 

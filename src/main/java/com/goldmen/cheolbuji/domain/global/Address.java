@@ -16,11 +16,11 @@ public class Address {
     private String buNum;
 
     @Embedded
-    private Position position;
+    private Coordinate coordinate;
 
-    public Address(String bonNum,String buNum, Position position){
+    public Address(String bonNum,String buNum, Coordinate coordinate){
         this.bonNum = bonNum;
         this.buNum = buNum;
-        this.position = position;
+        this.coordinate = coordinate;
     }
 }
