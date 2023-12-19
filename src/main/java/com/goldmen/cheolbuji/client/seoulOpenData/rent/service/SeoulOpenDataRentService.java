@@ -16,10 +16,10 @@ import static com.goldmen.cheolbuji.client.seoulOpenData.global.SeoulOpenDataPro
 @RequiredArgsConstructor
 @Service
 public class SeoulOpenDataRentService{
-    private final FileReader jsonFileService;
+    private final FileReader fileReader;
 
     public SeoulOpenDataResponse<SeoulOpenDataRent> loadFile() throws IOException {
-        return jsonFileService.readFile(PATH_INFORM_RENT, new TypeReference<>() {});
+        return fileReader.readFile(PATH_INFORM_RENT, new TypeReference<>() {});
     }
 
     public List<SeoulOpenDataRent> filter(List<SeoulOpenDataRent> rentList) {
