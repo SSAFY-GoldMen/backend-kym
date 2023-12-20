@@ -2,6 +2,7 @@ package com.goldmen.cheolbuji.domain.map.dong.domain;
 
 import com.goldmen.cheolbuji.domain.map.gu.domain.Gu;
 import com.goldmen.cheolbuji.domain.metro.station.domain.Station;
+import com.goldmen.cheolbuji.domain.realEstate.building.domain.Building;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -29,6 +30,9 @@ public class Dong {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "GU_ID")
     private Gu gu;
+
+    @OneToMany(mappedBy = "dong")
+    private final List<Building> buildingList = new ArrayList<>();
 
     @OneToMany(mappedBy = "dong")
     private final List<Station> stationList = new ArrayList<>();

@@ -1,4 +1,4 @@
-package com.goldmen.cheolbuji.domain.realEstate.purchase.jeonse.domain;
+package com.goldmen.cheolbuji.domain.realEstate.house.jeonse.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

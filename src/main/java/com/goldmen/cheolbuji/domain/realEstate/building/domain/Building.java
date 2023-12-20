@@ -3,11 +3,15 @@ package com.goldmen.cheolbuji.domain.realEstate.building.domain;
 import com.goldmen.cheolbuji.domain.map.dong.domain.Dong;
 import com.goldmen.cheolbuji.domain.global.Address;
 import com.goldmen.cheolbuji.domain.global.Coordinate;
+import com.goldmen.cheolbuji.domain.realEstate.house.rent.domain.Rent;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
@@ -34,6 +38,9 @@ public class Building {
     @JoinColumn(name = "DONG_ID")
     private Dong dong;
 
+    @OneToMany(mappedBy = "building")
+    private final List<Rent> rentList = new ArrayList<>();
+
     @Builder
     public Building(String name,
                     BuildingType type,
@@ -44,18 +51,12 @@ public class Building {
         this.type = type;
         this.address = address;
         this.constructionYear = constructionYear;
-        this.dong = dong;
+        addRelatedByDong(dong);
     }
 
-    @Builder(builderMethodName = "fromPositionBuilder")
-    public Building(String name,
-                    BuildingType type,
-                    String bonNum,
-                    String buNum,
-                    int constructionYear,
-                    Coordinate coordinate,
-                    Dong dong) {
-        this(name,type, new Address(bonNum,buNum, coordinate),constructionYear,dong);
+    private void addRelatedByDong(Dong dong){
+        this.dong = dong;
+        dong.getBuildingList().add(this);
     }
 
 }
