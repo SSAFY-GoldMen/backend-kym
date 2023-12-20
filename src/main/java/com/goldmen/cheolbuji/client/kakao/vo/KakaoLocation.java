@@ -4,14 +4,14 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.goldmen.cheolbuji.domain.global.Coordinate;
 
-public record KakaoLocation(double lng, double lat, String address) {
+public record KakaoLocation(double lng, double lat, String address_name) {
     @JsonCreator
     public KakaoLocation(@JsonProperty("x") double lng,
                          @JsonProperty("y") double lat,
-                         @JsonProperty("address_name") String address){
+                         @JsonProperty("address_name") String address_name){
         this.lng = lng;
         this.lat = lat;
-        this.address = address;
+        this.address_name = address_name;
     }
 
     public Coordinate coordinate(){
@@ -20,14 +20,14 @@ public record KakaoLocation(double lng, double lat, String address) {
 
 
     public String siName(){
-        return address.split(" ")[0];
+        return address_name.split(" ")[0];
     }
 
     public String guName(){
-        return address.split(" ")[1];
+        return address_name.split(" ")[1];
     }
 
     public String dongName(){
-        return address.split(" ")[2];
+        return address_name.split(" ")[2];
     }
 }

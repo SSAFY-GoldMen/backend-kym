@@ -43,12 +43,12 @@ public class Building {
 
     @Builder
     public Building(String name,
-                    BuildingType type,
+                    String type,
                     Address address,
                     int constructionYear,
                     Dong dong) {
         this.name = name;
-        this.type = type;
+        this.type = BuildingType.valueOf(type);
         this.address = address;
         this.constructionYear = constructionYear;
         addRelatedByDong(dong);
@@ -58,5 +58,4 @@ public class Building {
         this.dong = dong;
         dong.getBuildingList().add(this);
     }
-
 }

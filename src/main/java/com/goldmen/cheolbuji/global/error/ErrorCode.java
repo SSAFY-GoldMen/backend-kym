@@ -25,6 +25,14 @@ public enum ErrorCode {
     //Adjacent
     API_ERROR_ADJACENT_NOT_FOUND(400,"A001","존재하지 않음"),
 
+    //Rent
+    API_ERROR_RENT_NOT_FOUND(400,"R001","존재하지 않음"),
+
+    //Jeonse
+    API_ERROR_JEONSE_NOT_FOUND(400,"J001","존재하지 않음"),
+
+    //Walse
+    API_ERROR_WALSE_NOT_FOUND(400,"W001","존재하지 않음"),
     ;
     private final int status;
     private final String code;

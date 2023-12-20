@@ -16,6 +16,9 @@ public class Walse {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "WALSE_PRICE")
+    private int price;
+
     @Column(name = "WALSE_MONTHLY_PRICE")
     private int monthlyPrice;   //만원
 
@@ -24,7 +27,8 @@ public class Walse {
     private Rent rent;
 
     @Builder
-    public Walse(Rent rent,int monthlyPrice) {
+    public Walse(Rent rent, int price, int monthlyPrice) {
+        this.price = price;
         this.monthlyPrice = monthlyPrice;
         addRelatedByRent(rent);
     }

@@ -6,6 +6,7 @@ import lombok.*;
 
 @Embeddable
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@EqualsAndHashCode
 @Getter
 public class Coordinate {
     @Column(nullable = false)

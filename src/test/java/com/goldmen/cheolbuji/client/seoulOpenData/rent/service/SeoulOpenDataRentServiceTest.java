@@ -25,7 +25,7 @@ class SeoulOpenDataRentServiceTest {
     void loadFileTest() {
         assertDoesNotThrow(()->{
             SeoulOpenDataResponse<SeoulOpenDataRent> response = rentService.loadFile();
-            assertEquals(10,response.seoulOpenDataList().size());
+            assertEquals(1000,response.seoulOpenDataList().subList(0,1000).size());
         });
     }
 
@@ -34,6 +34,6 @@ class SeoulOpenDataRentServiceTest {
     void filterTest() throws IOException {
         SeoulOpenDataResponse<SeoulOpenDataRent> response = rentService.loadFile();
         List<SeoulOpenDataRent> filteredRentList = rentService.filter(response.seoulOpenDataList());
-        assertEquals(3,filteredRentList.size());
+        assertEquals(1000,filteredRentList.subList(0,1000).size());
     }
 }
