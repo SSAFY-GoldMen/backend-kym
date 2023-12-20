@@ -38,7 +38,7 @@ public class Station {
     public Station(String name,Dong dong, Coordinate coordinate){
         this.name = name;
         this.coordinate = coordinate;
-        addRelated(dong);
+        if(dong != null) addRelated(dong);
     }
 
     public List<Adjacent> getAdjacentList(){

@@ -18,15 +18,16 @@ public record KakaoLocation(double lng, double lat, String address) {
         return new Coordinate(lat,lng);
     }
 
-    public String si(){
+
+    public String siName(){
         return address.split(" ")[0];
     }
 
-    public String gu(){
+    public String guName(){
         return address.split(" ")[1];
     }
 
-    public String dong(){
+    public String dongName(){
         return address.split(" ")[2];
     }
 }

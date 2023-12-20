@@ -7,8 +7,11 @@ import com.goldmen.cheolbuji.domain.map.dong.exception.DongNotFoundException;
 import com.goldmen.cheolbuji.domain.map.dong.mapper.DongMapper;
 import com.goldmen.cheolbuji.domain.map.gu.domain.Gu;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Optional;
 
 @Transactional(readOnly = true)
 @RequiredArgsConstructor
@@ -18,7 +21,11 @@ public class DongService {
     private final DongMapper dongMapper;
 
     public Dong findByCode(String code){
-        return dongRepository.findByCode(code).orElseThrow(DongNotFoundException::new);
+        return dongRepository.findFirstByCode(code).orElseThrow(DongNotFoundException::new);
+    }
+
+    public Dong findByNameAndGuName(String dongName, String guName){
+        return dongRepository.findFirstByNameAndGu_Name(dongName,guName).orElseThrow(DongNotFoundException::new);
     }
 
     @Transactional
